@@ -1,109 +1,130 @@
-# 🚦 Traffic Accidents Analysis
+🚦 Traffic Accident Data Analysis
+A Data Analytics and Visualization (DAV) Semester Project
+An India-wide exploratory analysis of a simulated traffic-accident dataset using Python and Power BI.
 
-**A Data Analytics and Visualization Project for Safer Roads**
+🎯 Project Objectives
 
-## 📌 Project Overview
+Clean and preprocess traffic accident data.
+Perform Exploratory Data Analysis (EDA).
+Identify accident trends across cities, states and time periods.
+Analyze accident severity and recorded causes.
+Explore weather, road conditions and vehicle categories.
+Develop visualizations and an interactive Power BI dashboard.
 
-Traffic Accidents Analysis is a Data Analytics and Visualization (DAV) semester project that analyzes traffic accident data to identify patterns, trends, and factors associated with road accidents.
+📊 Dataset Overview
 
-The project uses data cleaning, exploratory data analysis (EDA), and visualization to transform raw data into meaningful insights that support road-safety decision-making.
 
-## 🎯 Problem Statement
 
-To analyze traffic accident data and identify patterns, trends, and factors contributing to road accidents.
+Attribute
+Details
 
-## 🎯 Objectives
 
-- Clean and preprocess traffic accident data.
-- Analyze accident trends and patterns.
-- Identify accident-prone locations and high-risk periods.
-- Explore relationships between accident-related factors.
-- Create meaningful charts and visualizations.
-- Present insights that can help improve road safety.
 
-## 👥 Target Users
 
-- Traffic authorities and police
-- Government agencies
-- Road safety planners
-- Researchers and students
+Records
+500
 
-## 📊 Dataset
 
-The project uses traffic accident data for analysis and visualization.
+Columns
+13
 
-Supporting dataset documentation and data-source information are maintained in the repository. Refer to the `data/` and `docs/` folders for the available files.
 
-## 🔄 Project Workflow
+Cities
+20
 
-1. Data collection and understanding
-2. Data cleaning and preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Statistical analysis
-5. Data visualization
-6. Pattern and trend identification
-7. Insights and interpretation
-8. Dashboard development and presentation
 
-## 🛠️ Technologies Used
+States
+15
 
-- **Python** — data analysis
-- **Pandas** — data manipulation and cleaning
-- **NumPy** — numerical operations
-- **Matplotlib and Seaborn** — data visualization
-- **Jupyter Notebook / VS Code** — development environment
-- **Git and GitHub** — version control and collaboration
 
-## 📁 Repository Structure
+Date range
+2 January 2023 – 27 December 2024
 
-```text
+
+Data type
+Synthetic / simulated
+
+
+
+Important: The dataset is simulated and does not represent official NCRB, MoRTH or traffic-police statistics. Findings describe this dataset only.
+📈 Key Findings
+
+Total accidents: 500
+Total injuries: 2,031
+Total fatalities: 20
+Vehicles involved: 1,264
+Highest accident month: July (50 records)
+Highest accident weekday: Friday (78 records)
+Most common severity: Minor (244 records)
+Most frequent recorded cause: Speeding (79 records)
+Highest city-level count: Delhi (36 records)
+Most frequent vehicle category: Bus (80 records)
+
+These are descriptive dataset findings, not proof of causation or official national statistics.
+🔄 Project Workflow
+
+Data collection and understanding
+Data cleaning and preprocessing
+Exploratory Data Analysis
+Statistical and descriptive analysis
+Data visualization
+Pattern identification
+Interpretation of findings
+Power BI dashboard development
+
+🛠️ Technologies Used
+
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Jupyter Notebook
+VS Code
+Microsoft Power BI
+Git and GitHub
+
+📊 Dashboard Features
+The Power BI dashboard includes:
+
+Accident overview KPI cards
+Monthly accident trends
+City-wise accident analysis
+Accident severity distribution
+Accident cause analysis
+Weather-condition analysis
+Vehicle-type analysis
+Road-condition analysis
+Interactive filters and slicers
+
+The final dashboard will be included as Dashboard.pbix after development is complete.
+📁 Repository Structure
 TrafficAccidentsAnalysis/
-│
-├── data/         # Dataset and related data files
+├── data/         # Raw and cleaned datasets
 ├── docs/         # Project and dataset documentation
-├── notebooks/    # Data analysis notebooks
-├── proposal/     # Project proposal documents
-├── results/      # Analysis outputs and results
+├── notebooks/    # Jupyter notebooks
+├── proposal/     # Project proposal
+├── results/      # Analysis results and reports
 ├── scripts/      # Python scripts
-│
-├── README.md     # Project overview and documentation
-└── LICENSE       # Project license
-```
+├── README.md
+└── LICENSE
 
-## 📈 Expected Dashboard
+⚠️ Limitations
 
-The proposed traffic accident dashboard will present important accident statistics and visual insights in one place.
+The dataset is simulated, not official accident data.
+Findings are limited to the available 500 records.
+City counts are not normalized by population or traffic volume.
+Recorded relationships do not establish causation.
 
-Planned features include:
+🚀 Future Scope
 
-- **Accident Overview:** Total accidents, casualties, vehicles involved, and fatal accidents, where supported by the dataset.
-- **Accident Trends:** Time-based and monthly accident patterns.
-- **Accident Hotspots:** Visualization of accident-prone locations, if geographic data is available.
-- **Cause Analysis:** Comparison of recorded accident causes.
-- **Weather Analysis:** Exploration of accidents across weather conditions.
-- **Severity Analysis:** Distribution of accident severity.
-- **Key Insights:** Important patterns identified through the analysis.
+Incorporate verified official accident datasets.
+Expand geographical and temporal coverage.
+Add geographic accident mapping.
+Perform deeper statistical analysis.
+Enhance the interactive Power BI dashboard.
 
-*Dashboard features will depend on the available dataset fields and completed analysis.*
-
-## 📌 Project Status
-
-The repository is organized into separate folders for data, documentation, notebooks, scripts, the proposal, and results.
-
-The README and project documentation will be updated as the team completes its assigned tasks and adds verified analysis outputs.
-
-## 🚀 Future Scope
-
-- Develop an interactive traffic accident dashboard.
-- Improve accident hotspot visualization.
-- Explore statistical relationships between accident factors.
-- Incorporate additional traffic accident datasets.
-- Investigate predictive analytics where suitable data is available.
-
-## 👥 Project Development
-
-This project is developed collaboratively as part of the Data Analytics and Visualization semester course. GitHub Issues are used to divide tasks, track progress, and organize project deliverables.
-
-## 📄 License
-
-This project is licensed under the Apache License 2.0. Refer to the `LICENSE` file for details.
+👥 Project Development
+Developed collaboratively by a team of three as part of the Data Analytics and Visualization semester project.
+📄 License
+Licensed under Apache License 2.0. See the LICENSE file for details.
