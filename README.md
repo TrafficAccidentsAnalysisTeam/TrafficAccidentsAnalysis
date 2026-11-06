@@ -6,10 +6,11 @@ An exploratory data analysis and visualization project focused on understanding 
 Traffic accidents are influenced by several factors, including road conditions, weather, vehicle types, time, location and human behavior.
 This project analyzes a traffic accident dataset to identify patterns, trends, accident severity and contributing factors. Using data cleaning, Exploratory Data Analysis (EDA), statistical analysis and visualization, the project transforms raw data into meaningful insights.
 The project also includes an interactive Power BI dashboard to present findings in an accessible and understandable format.
+
 🎯 Problem Statement
 To analyze traffic accident data and identify patterns, trends, accident severity and contributing factors across different locations and time periods.
-🎯 Project Objectives
 
+🎯 Project Objectives
 Clean and preprocess the traffic accident dataset.
 Perform Exploratory Data Analysis (EDA).
 Analyze accident trends across months, years and locations.
@@ -23,105 +24,14 @@ Develop an interactive dashboard using Power BI.
 
 📊 Dataset Overview
 
-
-
-Attribute
-Details
-
-
-
-
-Total Records
-500
-
-
-Total Columns
-13
-
-
-Cities Covered
-20
-
-
-States Covered
-15
-
-
-Date Range
-2 January 2023 – 27 December 2024
-
-
-Dataset Type
-Synthetic / Simulated
-
-
-
-Dataset Attributes
-
-
-
-Column
-Description
-
-
-
-
-Accident_ID
-Unique accident identifier
-
-
-Date
-Date of accident
-
-
-Time
-Time of accident
-
-
-City
-City where accident occurred
-
-
-State
-State where accident occurred
-
-
-Weather_Condition
-Weather during accident
-
-
-Road_Condition
-Road condition
-
-
-Vehicle_Type
-Type of vehicle involved
-
-
-Vehicles_Involved
-Number of vehicles involved
-
-
-Accident_Severity
-Severity classification
-
-
-Injuries
-Number of injuries
-
-
-Fatalities
-Number of fatalities
-
-
-Accident_Cause
-Recorded contributing factor
-
-
-
-
-Important: The dataset is synthetic/simulated and is not an official extract from NCRB, MoRTH or any traffic-police database. All findings represent patterns within this dataset and should not be interpreted as official Indian road accident statistics.
-
+| Attribute | Details |
+|---|---|
+| Total Records | 500 |
+| Total Columns | 13 |
+| Cities Covered | 20 |
+| States Covered | 15 |
+| Date Range | 2 January 2023 – 27 December 2024 |
+| Data Type | Synthetic / Simulated |
 
 🧹 Data Cleaning and Preprocessing
 The raw dataset was processed using Python and Pandas to improve data quality and consistency.
@@ -141,242 +51,22 @@ Output Dataset: traffic_accidents_cleaned.csv
 
 📈 Exploratory Data Analysis – Key Findings
 The analysis of the 500 accident records produced the following observations.
-1. Overall Accident Statistics
 
-
-
-Metric
-Total
-
-
-
-
-Total Accidents
-500
-
-
-Total Vehicles Involved
-1,264
-
-
-Total Injuries
-2,031
-
-
-Total Fatalities
-20
-
-
-
-2. Year-wise Analysis
-
-
-
-Year
-Accident Records
-
-
-
-
-2023
-250
-
-
-2024
-250
-
-
-
-3. Monthly Analysis
-
-
-
-Observation
-Result
-
-
-
-
-Highest Accident Month
-July
-
-
-Accidents in July
-50
-
-
-Lowest Accident Month
-June
-
-
-Accidents in June
-29
-
-
-
-4. Accident Severity Analysis
-
-
-
-Severity
-Accidents
-Percentage
-
-
-
-
-Minor
-244
-48.8%
-
-
-Moderate
-174
-34.8%
-
-
-Severe
-65
-13.0%
-
-
-Fatal
-17
-3.4%
-
-
-
-5. City-wise Accident Analysis
-
-
-
-City
-Accident Records
-
-
-
-
-Delhi
-36
-
-
-Bhopal
-33
-
-
-Visakhapatnam
-31
-
-
-Kochi
-31
-
-
-Indore
-31
-
-
-
-6. Accident Cause Analysis
-
-
-
-Accident Cause
-Records
-
-
-
-
-Speeding
-79
-
-
-Weather
-77
-
-
-Drunk Driving
-75
-
-
-Distracted Driving
-73
-
-
-Poor Road Condition
-72
-
-
-
-7. Weather Condition Analysis
-
-
-
-Weather Condition
-Records
-
-
-
-
-Rain
-110
-
-
-Overcast
-109
-
-
-Cloudy
-97
-
-
-Clear
-92
-
-
-Fog
-92
-
-
-
-8. Vehicle Type Analysis
-
-
-
-Vehicle Type
-Records
-
-
-
-
-Bus
-80
-
-
-Car
-77
-
-
-Van
-74
-
-
-Truck
-74
-
-
-Auto Rickshaw
-67
-
-
-SUV
-64
-
-
-Motorcycle
-64
-
-
+| Column Name | Description |
+|---|---|
+| Accident_ID | Unique accident identification number |
+| Date | Date of the accident |
+| Time | Time of the accident |
+| City | City where the accident occurred |
+| State | State where the accident occurred |
+| Weather_Condition | Weather during the accident |
+| Road_Condition | Condition of the road |
+| Vehicle_Type | Type of vehicle involved |
+| Vehicles_Involved | Number of vehicles involved |
+| Accident_Severity | Severity classification |
+| Injuries | Number of people injured |
+| Fatalities | Number of deaths |
+| Accident_Cause | Primary cause of the accident |
 
 These results are descriptive findings from the available dataset. They do not establish causation or account for exposure factors such as population, traffic volume or road mileage.
 
@@ -516,3 +206,4 @@ Developed collaboratively by a team of three students as part of the Data Analyt
 This project is licensed under the Apache License 2.0. Refer to the LICENSE file for details.
 
 Traffic Accident Data Analysis | DAV Semester Project
+
