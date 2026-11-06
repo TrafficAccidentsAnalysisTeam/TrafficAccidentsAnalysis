@@ -4,21 +4,22 @@ An exploratory data analysis and visualization project focused on understanding 
 
 📌 Project Overview
 Traffic accidents are influenced by several factors, including road conditions, weather, vehicle types, time, location and human behavior.
-This project analyzes a traffic accident dataset to identify patterns, trends and relationships among these factors. Using data cleaning, exploratory data analysis (EDA), statistical analysis and visualization, the project transforms raw data into meaningful insights.
-The project also includes an interactive Power BI dashboard to present the findings in an accessible and understandable format.
+This project analyzes a traffic accident dataset to identify patterns, trends, accident severity and contributing factors. Using data cleaning, Exploratory Data Analysis (EDA), statistical analysis and visualization, the project transforms raw data into meaningful insights.
+The project also includes an interactive Power BI dashboard to present findings in an accessible and understandable format.
 🎯 Problem Statement
 To analyze traffic accident data and identify patterns, trends, accident severity and contributing factors across different locations and time periods.
 🎯 Project Objectives
 
 Clean and preprocess the traffic accident dataset.
 Perform Exploratory Data Analysis (EDA).
-Analyze accident trends across different months, years and locations.
+Analyze accident trends across months, years and locations.
 Identify cities with the highest recorded accident counts.
 Examine accident severity, injuries and fatalities.
-Analyze accident causes and contributing factors.
-Explore the impact of weather and road conditions.
+Analyze recorded accident causes and contributing factors.
+Explore weather and road conditions.
 Study accident distribution across different vehicle types.
 Develop an interactive dashboard using Power BI.
+
 
 📊 Dataset Overview
 
@@ -56,7 +57,6 @@ Synthetic / Simulated
 
 
 Dataset Attributes
-The dataset contains the following attributes:
 
 
 
@@ -86,14 +86,6 @@ State
 State where accident occurred
 
 
-Accident_Severity
-Severity classification
-
-
-Accident_Cause
-Recorded contributing factor
-
-
 Weather_Condition
 Weather during accident
 
@@ -110,6 +102,10 @@ Vehicles_Involved
 Number of vehicles involved
 
 
+Accident_Severity
+Severity classification
+
+
 Injuries
 Number of injuries
 
@@ -118,9 +114,14 @@ Fatalities
 Number of fatalities
 
 
+Accident_Cause
+Recorded contributing factor
 
 
-Note: The dataset is synthetic/simulated and is not an official extract from NCRB, MoRTH or any traffic-police database. All findings represent patterns within this dataset and should not be interpreted as official Indian road accident statistics.
+
+
+Important: The dataset is synthetic/simulated and is not an official extract from NCRB, MoRTH or any traffic-police database. All findings represent patterns within this dataset and should not be interpreted as official Indian road accident statistics.
+
 
 🧹 Data Cleaning and Preprocessing
 The raw dataset was processed using Python and Pandas to improve data quality and consistency.
@@ -137,6 +138,7 @@ Validating the cleaned dataset.
 
 Input Dataset: traffic_accidents_raw.csv
 Output Dataset: traffic_accidents_cleaned.csv
+
 📈 Exploratory Data Analysis – Key Findings
 The analysis of the 500 accident records produced the following observations.
 1. Overall Accident Statistics
@@ -168,16 +170,51 @@ Total Fatalities
 
 2. Year-wise Analysis
 
-2023: 250 accidents
-2024: 250 accidents
 
-Both years have an equal number of accident records.
+
+Year
+Accident Records
+
+
+
+
+2023
+250
+
+
+2024
+250
+
+
+
 3. Monthly Analysis
 
-Highest accident month: July – 50 accidents.
-Lowest accident month: June – 29 accidents.
 
-4. Accident Severity
+
+Observation
+Result
+
+
+
+
+Highest Accident Month
+July
+
+
+Accidents in July
+50
+
+
+Lowest Accident Month
+June
+
+
+Accidents in June
+29
+
+
+
+4. Accident Severity Analysis
 
 
 
@@ -209,13 +246,12 @@ Fatal
 
 
 
-5. City-wise Analysis
-Cities with the highest recorded accident counts:
+5. City-wise Accident Analysis
 
 
 
 City
-Accidents
+Accident Records
 
 
 
@@ -241,8 +277,7 @@ Indore
 
 
 
-6. Accident Causes
-Most frequently recorded accident causes:
+6. Accident Cause Analysis
 
 
 
@@ -273,25 +308,78 @@ Poor Road Condition
 
 
 
-7. Weather Conditions
+7. Weather Condition Analysis
 
-Rain: 110
-Overcast: 109
-Cloudy: 97
-Clear: 92
-Fog: 92
+
+
+Weather Condition
+Records
+
+
+
+
+Rain
+110
+
+
+Overcast
+109
+
+
+Cloudy
+97
+
+
+Clear
+92
+
+
+Fog
+92
+
+
 
 8. Vehicle Type Analysis
 
-Bus: 80
-Car: 77
-Van: 74
-Truck: 74
-Auto Rickshaw: 67
-SUV: 64
-Motorcycle: 64
+
+
+Vehicle Type
+Records
+
+
+
+
+Bus
+80
+
+
+Car
+77
+
+
+Van
+74
+
+
+Truck
+74
+
+
+Auto Rickshaw
+67
+
+
+SUV
+64
+
+
+Motorcycle
+64
+
+
 
 These results are descriptive findings from the available dataset. They do not establish causation or account for exposure factors such as population, traffic volume or road mileage.
+
 📊 Power BI Dashboard
 An interactive dashboard is being developed using Microsoft Power BI to visualize the analysis results.
 Planned Dashboard Components
@@ -307,6 +395,7 @@ Road Condition Analysis: Analysis of accidents across different road conditions.
 Interactive Filters: Filters for year, state, city and accident severity.
 
 The completed dashboard will be included in the project deliverables as Dashboard.pbix.
+
 🔄 Project Workflow
 
 Data Collection and Understanding
@@ -317,6 +406,7 @@ Data Visualization
 Pattern and Trend Identification
 Power BI Dashboard Development
 Insights and Interpretation
+
 
 🛠️ Technologies Used
 
@@ -365,6 +455,7 @@ Version control and collaboration
 
 
 
+
 📁 Repository Structure
 TrafficAccidentsAnalysis/
 │
@@ -397,7 +488,8 @@ TrafficAccidentsAnalysis/
 ├── README.md
 └── LICENSE
 
-Note: The structure above describes the intended project organization. Refer to the repository for the actual available filenames and folders.
+Note: This represents the intended organization of project deliverables. Refer to the repository for the actual available filenames and folders.
+
 ⚠️ Limitations
 
 The dataset is synthetic/simulated rather than verified official accident data.
@@ -405,6 +497,7 @@ The analysis is limited to 500 records.
 City-level accident counts are not normalized by population or traffic volume.
 The dataset has a limited number of attributes and categories.
 Recorded contributing factors do not establish direct causation.
+
 
 🚀 Future Scope
 
@@ -415,8 +508,10 @@ Perform deeper statistical and correlation analysis.
 Enhance the Power BI dashboard with additional interactive features.
 Explore predictive analytics using suitable, representative datasets.
 
+
 👥 Project Development
 Developed collaboratively by a team of three students as part of the Data Analytics and Visualization (DAV) semester project.
+
 📄 License
 This project is licensed under the Apache License 2.0. Refer to the LICENSE file for details.
 
