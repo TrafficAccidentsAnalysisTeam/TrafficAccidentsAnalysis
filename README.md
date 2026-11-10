@@ -144,9 +144,8 @@ Git & GitHub
 Version control and collaboration
 
 
-
-
 📁 Repository Structure
+```text
 TrafficAccidentsAnalysis/
 │
 ├── data/
@@ -177,6 +176,7 @@ TrafficAccidentsAnalysis/
 ├── Dashboard.pbix
 ├── README.md
 └── LICENSE
+```
 
 Note: This represents the intended organization of project deliverables. Refer to the repository for the actual available filenames and folders.
 
